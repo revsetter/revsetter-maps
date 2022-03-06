@@ -1,10 +1,10 @@
-.org-tree-container {
+.organization-tree-container {
   display: inline-block;
   padding: 15px;
   background-color: transparent;
 }
 
-.org-tree {
+.organization-tree {
   // display: inline-block;
   display: table;
   text-align: center;
@@ -19,8 +19,8 @@
   }
 }
 
-.org-tree-node,
-.org-tree-node-children {
+.organization-tree-node,
+.organization-tree-node-children {
   position: relative;
   margin: 0;
   padding: 0;
@@ -30,18 +30,18 @@
     transition: all .35s;
   }
 }
-.org-tree-node-label {
+.organization-tree-node-label {
   position: relative;
   display: inline-block;
 
-  .org-tree-node-label-inner {
+  .organization-tree-node-label-inner {
     padding: 10px 15px;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
   }
 }
-.org-tree-node-btn {
+.organization-tree-node-btn {
   position: absolute;
   top: 100%;
   left: 50%;
@@ -87,7 +87,7 @@
     border: none;
   }
 }
-.org-tree-node {
+.organization-tree-node {
   padding-top: 20px;
   display: table-cell;
   vertical-align: top;
@@ -117,10 +117,10 @@
   }
 
 }
-.collapsable .org-tree-node.collapsed {
+.collapsable .organization-tree-node.collapsed {
   padding-bottom: 30px;
 
-  .org-tree-node-label:after {
+  .organization-tree-node-label:after {
     content: '';
     position: absolute;
     top: 100%;
@@ -130,16 +130,16 @@
     border-right: 1px solid #ddd;
   }
 }
-.org-tree > .org-tree-node {
+.organization-tree > .organization-tree-node {
   padding-top: 0;
 
   &:after {
     border-left: 0;
   }
 }
-.org-tree-node-children {
+.organization-tree-node-children {
   padding-top: 20px;
-  &:before {
+  &:first-child:not(:empty):before{
     content: '';
     position: absolute;
     top: 0;
@@ -157,7 +157,7 @@
 }
 
 .horizontal {
-  .org-tree-node {
+  .organization-tree-node {
     // display: flex;
     // flex-direction: row;
     // justify-content: flex-start;
@@ -198,21 +198,21 @@
       border-top: 1px solid #ddd;
     }
 
-    .org-tree-node-inner {
+    .organization-tree-node-inner {
       display: table;
     }
 
   }
 
-  .org-tree-node-label {
+  .organization-tree-node-label {
     display: table-cell;
     vertical-align: middle;
   }
 
-  &.collapsable .org-tree-node.collapsed {
+  &.collapsable .organization-tree-node.collapsed {
     padding-right: 30px;
 
-    .org-tree-node-label:after {
+    .organization-tree-node-label:after {
       top: 0;
       left: 100%;
       width: 20px;
@@ -222,18 +222,18 @@
     }
   }
 
-  .org-tree-node-btn {
+  .organization-tree-node-btn {
     top: 50%;
     left: 100%;
     margin-top: -11px;
     margin-left: 9px;
   }
 
-  & > .org-tree-node:only-child:before {
+  & > .organization-tree-node:only-child:before {
     border-bottom: 0;
   }
 
-  .org-tree-node-children {
+  .organization-tree-node-children {
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
@@ -242,7 +242,7 @@
     padding-top: 0;
     padding-left: 20px;
 
-    &:before {
+    &:first-child:not(:empty):before {
       top: 50%;
       left: 0;
       width: 20px;
@@ -250,12 +250,12 @@
       border-left: 0;
       border-top: 1px solid #ddd;
     }
-
+    
     &:after {
       display: none;
     }
 
-    & > .org-tree-node {
+    & > .organization-tree-node {
       display: block;
     }
   }

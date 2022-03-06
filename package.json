@@ -1,10 +1,10 @@
 {
   "name": "revsetter-maps",
-  "version": "0.6.1",
+  "version": "1.0.1",
   "description": "A vue3 block organization tree view component. Hierarchical horizontal or vertical tree",
   "main": "dist/revsetter-maps.common.js",
   "unpkg": "dist/revsetter-maps.umd.js",
-  "author": "megafetis",
+  "author": "Moussa Mokhtari",
   "scripts": {
     "build": "vue-cli-service build --target lib --name revsetter-maps ./src/index.ts && webpack --env.production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -50,13 +50,13 @@
     "vuedraggable": "^4.1.0"
   },
   "bugs": {
-    "url": "https://github.com/megafetis/revsetter-maps/issues"
+    "url": "https://github.com/revsetter/revsetter-maps/issues"
   },
   "browserslist": [
     "Android >= 4.0",
     "iOS >= 8"
   ],
-  "homepage": "https://github.com/megafetis/revsetter-maps",
+  "homepage": "https://github.com/revsetter/revsetter-maps",
   "files": [
     "types",
     "dist/*.js",
@@ -88,5 +88,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/revsetter/revsetter-maps.git"
-  }
+  },
+  "dependencies": {}
 }

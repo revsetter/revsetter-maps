@@ -1,6 +1,6 @@
 <template>
   <div :class="nodeClass">
-    <div class="org-tree-node-label">
+    <div class="organization-tree-node-label">
       <div
         :class="innerLabelClass"
         :style="{ width: labelWidth }"
@@ -22,23 +22,35 @@
     </div>
     <div
       v-if="expanded"
-      class="org-tree-node-children"
+      class="organization-tree-node-children"
       :id="data[props.key]"
       :data-type="data[props.typeKey]"
       :data-id="data[props.key]"
     >
       <draggable
         v-model="data[props.children]"
-        :move="(e) => props.onMove(e, data, nodeContext)"
+        :move="
+          (e) => {
+            onMoveEvent = e;
+            return props.onMove(e);
+          }
+        "
         @change="props.onChange"
         :filter="props.ignoreClass"
         v-bind="{
           animation: 200,
+          disabled: props.disabled,
           ghostClass: props.ghostClass,
           chosenClass: props.chosenClass,
         }"
+        @end="
+          (e) => {
+            props.onMoveEnd(onMoveEvent);
+          }
+        "
         group="children"
         item-key="id"
+        style="min-width:100%;min-height:400px"
       >
         <template #item="{ element, index }">
           <blocks-node
@@ -104,13 +116,20 @@ export default defineComponent({
         label: "label",
         expand: "expand",
         children: "children",
-        onMove: null,
-        onChange: null,
         chosenClass: "",
         ghostClass: "",
         ignoreClass: ".ignore-elements",
         key: "id",
         typeKey: "type",
+        disabled: false,
+        onMove: {
+          type: Object,
+          default: () => true,
+        },
+        onMoveEnd: {
+          type: Object,
+          default: () => {},
+        },
       }),
     },
     collapsable: {
@@ -136,11 +155,12 @@ export default defineComponent({
           : props.labelWidth
         : "auto"
     );
+    let onMoveEvent = ref<Object>({});
     let expanded = ref<boolean>(props.data[props.props.expand] || true);
 
     let nodeClass = computed(() => {
       return {
-        "org-tree-node": true,
+        "organization-tree-node": true,
         "is-leaf": isLeaf.value,
         collapsed: !isLeaf.value && props.collapsable && !expanded.value,
       };
@@ -153,14 +173,14 @@ export default defineComponent({
           : props.labelClassName;
 
       return {
-        "org-tree-node-label-inner": true,
+        "organization-tree-node-label-inner": true,
         [labelClassName]: !!labelClassName,
       };
     });
 
     let nodeExpandBtnClass = computed(() => {
       return {
-        "org-tree-node-btn": true,
+        "organization-tree-node-btn": true,
         expanded: !!expanded.value,
       };
     });
@@ -189,6 +209,7 @@ export default defineComponent({
     };
 
     return {
+      onMoveEvent,
       nodeClass,
       innerLabelClass,
       isLeaf,

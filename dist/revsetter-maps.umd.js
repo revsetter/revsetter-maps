@@ -10217,16 +10217,16 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-tree.vue?vue&type=template&id=4ec2e8c2&ts=true
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-tree.vue?vue&type=template&id=454d6a3a&ts=true
 
 var _hoisted_1 = {
-  class: "org-tree-container"
+  class: "organization-tree-container"
 };
 function render(_ctx, _cache) {
   var _component_BlocksNode = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("BlocksNode");
 
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", _hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
-    class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(["org-tree", {
+    class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(["organization-tree", {
       horizontal: _ctx.horizontal,
       collapsable: _ctx.collapsable
     }])
@@ -10268,10 +10268,10 @@ function render(_ctx, _cache) {
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-node.vue?vue&type=template&id=782a1629&ts=true
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-node.vue?vue&type=template&id=67cd2733&ts=true
 
-var blocks_nodevue_type_template_id_782a1629_ts_true_hoisted_1 = {
-  class: "org-tree-node-label"
+var blocks_nodevue_type_template_id_67cd2733_ts_true_hoisted_1 = {
+  class: "organization-tree-node-label"
 };
 var _hoisted_2 = {
   key: 0
@@ -10280,14 +10280,14 @@ var _hoisted_3 = {
   key: 1
 };
 var _hoisted_4 = ["id", "data-type", "data-id"];
-function blocks_nodevue_type_template_id_782a1629_ts_true_render(_ctx, _cache) {
+function blocks_nodevue_type_template_id_67cd2733_ts_true_render(_ctx, _cache) {
   var _component_blocks_node = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("blocks-node", true);
 
   var _component_draggable = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("draggable");
 
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", {
     class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(_ctx.nodeClass)
-  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", blocks_nodevue_type_template_id_782a1629_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
+  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", blocks_nodevue_type_template_id_67cd2733_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
     class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(_ctx.innerLabelClass),
     style: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeStyle"])({
       width: _ctx.labelWidth
@@ -10318,7 +10318,7 @@ function blocks_nodevue_type_template_id_782a1629_ts_true_render(_ctx, _cache) {
     }, ["stop"]))
   }, null, 2)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)], 38)]), _ctx.expanded ? (Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", {
     key: 0,
-    class: "org-tree-node-children",
+    class: "organization-tree-node-children",
     id: _ctx.data[_ctx.props.key],
     "data-type": _ctx.data[_ctx.props.typeKey],
     "data-id": _ctx.data[_ctx.props.key]
@@ -10328,17 +10328,30 @@ function blocks_nodevue_type_template_id_782a1629_ts_true_render(_ctx, _cache) {
       return _ctx.data[_ctx.props.children] = $event;
     }),
     move: function move(e) {
-      return _ctx.props.onMove(e, _ctx.data, _ctx.nodeContext);
+      var _ctx$props;
+
+      _ctx.onMoveEvent = e;
+      return (_ctx$props = _ctx.props) === null || _ctx$props === void 0 ? void 0 : _ctx$props.onMove(e);
     },
     onChange: _ctx.props.onChange,
     filter: _ctx.props.ignoreClass
   }, {
     animation: 200,
+    disabled: _ctx.props.disabled,
     ghostClass: _ctx.props.ghostClass,
     chosenClass: _ctx.props.chosenClass
   }, {
+    onEnd: _cache[11] || (_cache[11] = function (e) {
+      var _ctx$props2;
+
+      (_ctx$props2 = _ctx.props) === null || _ctx$props2 === void 0 ? void 0 : _ctx$props2.onMoveEnd(_ctx.onMoveEvent);
+    }),
     group: "children",
-    "item-key": "id"
+    "item-key": "id",
+    style: {
+      "min-width": "100%",
+      "min-height": "400px"
+    }
   }), {
     item: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withCtx"])(function (_ref) {
       var element = _ref.element,
@@ -10415,6 +10428,16 @@ var vuedraggable_umd_default = /*#__PURE__*/__webpack_require__.n(vuedraggable_u
       type: Object,
       required: true
     },
+    onMove: {
+      type: Object,
+      default: function _default() {
+        return true;
+      }
+    },
+    onMoveEnd: {
+      type: Object,
+      default: function _default() {}
+    },
     props: {
       type: Object,
       default: function _default() {
@@ -10422,13 +10445,22 @@ var vuedraggable_umd_default = /*#__PURE__*/__webpack_require__.n(vuedraggable_u
           label: "label",
           expand: "expand",
           children: "children",
-          onMove: null,
-          onChange: null,
           chosenClass: "",
           ghostClass: "",
           ignoreClass: ".ignore-elements",
           key: "id",
-          typeKey: "type"
+          typeKey: "type",
+          disabled: false,
+          onMove: {
+            type: Object,
+            default: function _default() {
+              return true;
+            }
+          },
+          onMoveEnd: {
+            type: Object,
+            default: function _default() {}
+          }
         };
       }
     },
@@ -10451,10 +10483,11 @@ var vuedraggable_umd_default = /*#__PURE__*/__webpack_require__.n(vuedraggable_u
     var labelWidth = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["computed"])(function () {
       return props.labelWidth ? typeof props.labelWidth == "number" ? "".concat(props.labelWidth, "px") : props.labelWidth : "auto";
     });
+    var onMoveEvent = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["ref"])({});
     var expanded = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["ref"])(props.data[props.props.expand] || true);
     var nodeClass = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["computed"])(function () {
       return {
-        "org-tree-node": true,
+        "organization-tree-node": true,
         "is-leaf": isLeaf.value,
         collapsed: !isLeaf.value && props.collapsable && !expanded.value
       };
@@ -10462,12 +10495,12 @@ var vuedraggable_umd_default = /*#__PURE__*/__webpack_require__.n(vuedraggable_u
     var innerLabelClass = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["computed"])(function () {
       var labelClassName = typeof props.labelClassName == "function" ? props.labelClassName(props.data) : props.labelClassName;
       return _defineProperty({
-        "org-tree-node-label-inner": true
+        "organization-tree-node-label-inner": true
       }, labelClassName, !!labelClassName);
     });
     var nodeExpandBtnClass = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["computed"])(function () {
       return {
-        "org-tree-node-btn": true,
+        "organization-tree-node-btn": true,
         expanded: !!expanded.value
       };
     });
@@ -10499,6 +10532,7 @@ var vuedraggable_umd_default = /*#__PURE__*/__webpack_require__.n(vuedraggable_u
     };
 
     return {
+      onMoveEvent: onMoveEvent,
       nodeClass: nodeClass,
       innerLabelClass: innerLabelClass,
       isLeaf: isLeaf,
@@ -10522,7 +10556,7 @@ var exportHelper_default = /*#__PURE__*/__webpack_require__.n(exportHelper);
 
 
 
-const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_script_lang_ts, [['render',blocks_nodevue_type_template_id_782a1629_ts_true_render]])
+const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_script_lang_ts, [['render',blocks_nodevue_type_template_id_67cd2733_ts_true_render]])
 
 /* harmony default export */ var blocks_node = (__exports__);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-tree.vue?vue&type=script&lang=ts

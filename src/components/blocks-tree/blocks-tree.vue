@@ -1,6 +1,6 @@
 <template>
-  <div class="org-tree-container">
-    <div class="org-tree" :class="{ horizontal, collapsable }">
+  <div class="organization-tree-container">
+    <div class="organization-tree" :class="{ horizontal, collapsable }">
       <BlocksNode
         :data="data"
         :props="props"
