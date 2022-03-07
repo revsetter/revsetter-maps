@@ -14,7 +14,7 @@
 
     <h1>With slots</h1>
     <div>
-        <blocks-tree :data="treeData" :horizontal="treeOrientation=='1'" :collapsable="true" :props="{label: 'label', expand: 'expand', children: 'children',  key:'some_id'}">
+        <blocks-tree :data="treeData" :horizontal="treeOrientation=='1'" :collapsable="true" :props="{label: 'label', expand: 'expand', children: 'children',  key:'some_id', onMove: onNodeMove, onMoveEnd: onNodeMoveEnd }">
         <template #node="{data,context}">
             <span>
                 <input type="checkbox" :checked="selected.indexOf(data.some_id)> -1" @change="(e)=>toggleSelect(data,e.target.checked)"/> {{data.label}}
@@ -73,6 +73,14 @@ export default defineComponent({
             ]
         });
 
+        const onNodeMove = (evt) => {
+            // return true to permit drag and false if not 
+            return true
+        }
+        const onNodeMoveEnd = (evt) => {
+            // use to call any endpoints 
+            console.log("Drag end)
+        }
         const toggleSelect = (node, isSelected) => {
             isSelected ? selected.value.push(node.some_id) : selected.value.splice(selected.value.indexOf(node.some_id), 1);
             if(node.children && node.children.length) {
@@ -99,10 +107,8 @@ export default defineComponent({
 
 ```
 # use npm
-npm i revsetter-maps
+npm i https://github.com/revsetter/revsetter-maps.git
 
-# use yarn
-yarn add revsetter-maps
 ```
 ### Import Plugins
 
@@ -134,11 +140,13 @@ createApp(App)
   prop              | descripton                              | type                   | default
   ------------------|-----------------------------------------|:----------------------:|:---------------------------------------------------------:
   data              |                                         | `Object`               |
-  props             |  configure props                        | `Object`               | `{label: 'label', children: 'children', expand: 'expand',key: 'id'}`
+  props             |  configure props                        | `Object`               | `{label: 'label', children: 'children', expand: 'expand',key: 'id',}`
   labelWidth        |  node label width                       | `String` \| `Number`   | `auto`
   collapsable       |  children node is collapsable           | `Boolean`              | `true`
   renderContent     |  how to render node label               | `Function`             |     -
   labelClassName    |  node label class                       | `Function` \| `String` |     -
+  onMove            |  method to disallow and allow the drag  | `Function`             |     -
+  onMoveEnd         |  method to run and api or updates       | `Function`             |     -
 
 
 
