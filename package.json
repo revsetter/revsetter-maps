@@ -1,6 +1,6 @@
 {
   "name": "revsetter-maps",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A vue3 block organization tree view component. Hierarchical horizontal or vertical tree",
   "main": "dist/revsetter-maps.common.js",
   "unpkg": "dist/revsetter-maps.umd.js",

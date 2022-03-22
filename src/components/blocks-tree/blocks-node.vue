@@ -123,11 +123,11 @@ export default defineComponent({
         typeKey: "type",
         disabled: false,
         onMove: {
-          type: Object,
+          type: Function,
           default: () => true,
         },
         onMoveEnd: {
-          type: Object,
+          type: Function,
           default: () => {},
         },
       }),
