@@ -50,7 +50,12 @@
         "
         group="children"
         item-key="id"
-        style="min-width:100%;min-height:400px"
+        :style="[
+          data[props.children].length == 1
+            ? 'display:flex;flex-direction:column'
+            : '',
+          'min-width:100%;min-height:400px;',
+        ]"
       >
         <template #item="{ element, index }">
           <blocks-node

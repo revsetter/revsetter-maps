@@ -8,4 +8,6 @@ export interface PropsType {
     expand: string;
     children: string;
     key?:any| (() => any);
+    onMove:()=>true;
+    onMoveEnd:()=>true;
 }

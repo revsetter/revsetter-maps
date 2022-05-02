@@ -10259,9 +10259,9 @@ function render(_ctx, _cache) {
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-node.vue?vue&type=template&id=7643aaea&ts=true
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-node.vue?vue&type=template&id=0ac3c2f2&ts=true
 
-var blocks_nodevue_type_template_id_7643aaea_ts_true_hoisted_1 = {
+var blocks_nodevue_type_template_id_0ac3c2f2_ts_true_hoisted_1 = {
   class: "organization-tree-node-label"
 };
 var _hoisted_2 = {
@@ -10271,14 +10271,14 @@ var _hoisted_3 = {
   key: 1
 };
 var _hoisted_4 = ["id", "data-type", "data-id"];
-function blocks_nodevue_type_template_id_7643aaea_ts_true_render(_ctx, _cache) {
+function blocks_nodevue_type_template_id_0ac3c2f2_ts_true_render(_ctx, _cache) {
   var _component_blocks_node = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("blocks-node", true);
 
   var _component_draggable = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("draggable");
 
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", {
     class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(_ctx.nodeClass)
-  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", blocks_nodevue_type_template_id_7643aaea_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
+  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", blocks_nodevue_type_template_id_0ac3c2f2_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
     class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(_ctx.innerLabelClass),
     style: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeStyle"])({
       width: _ctx.labelWidth
@@ -10335,10 +10335,7 @@ function blocks_nodevue_type_template_id_7643aaea_ts_true_render(_ctx, _cache) {
     }),
     group: "children",
     "item-key": "id",
-    style: {
-      "min-width": "100%",
-      "min-height": "400px"
-    }
+    style: [_ctx.data[_ctx.props.children].length == 1 ? 'display:flex;flex-direction:column' : '', 'min-width:100%;min-height:400px;']
   }), {
     item: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withCtx"])(function (_ref) {
       var element = _ref.element,
@@ -10379,7 +10376,7 @@ function blocks_nodevue_type_template_id_7643aaea_ts_true_render(_ctx, _cache) {
       }, 1032, ["data", "props", "collapsable", "renderContent", "labelWidth", "labelClassName"]))];
     }),
     _: 3
-  }, 16, ["modelValue", "move", "onChange", "filter"])], 8, _hoisted_4)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)], 2);
+  }, 16, ["modelValue", "move", "onChange", "filter", "style"])], 8, _hoisted_4)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)], 2);
 }
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
@@ -10533,7 +10530,7 @@ var exportHelper_default = /*#__PURE__*/__webpack_require__.n(exportHelper);
 
 
 
-const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_script_lang_ts, [['render',blocks_nodevue_type_template_id_7643aaea_ts_true_render]])
+const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_script_lang_ts, [['render',blocks_nodevue_type_template_id_0ac3c2f2_ts_true_render]])
 
 /* harmony default export */ var blocks_node = (__exports__);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-tree.vue?vue&type=script&lang=ts

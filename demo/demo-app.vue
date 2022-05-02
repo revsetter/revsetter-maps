@@ -13,6 +13,8 @@
         expand: 'expand',
         children: 'children',
         key: 'some_id',
+        onMove: () => true,
+        onMoveEnd: () => true,
       }"
       :data="treeData"
       :horizontal="treeOrientation == '1'"
@@ -28,6 +30,8 @@
         expand: 'expand',
         children: 'children',
         key: 'some_id',
+        onMove: () => true,
+        onMoveEnd: () => true,
       }"
       :horizontal="treeOrientation == '1'"
       :collapsable="true"
