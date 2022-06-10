@@ -54,7 +54,7 @@
           data[props.children].length == 1
             ? 'display:flex;flex-direction:column'
             : '',
-          'min-width:100%;min-height:400px;',
+          'min-width:100%;',
         ]"
       >
         <template #item="{ element, index }">
