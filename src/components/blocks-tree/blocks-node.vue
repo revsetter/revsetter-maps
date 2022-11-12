@@ -51,7 +51,7 @@
         group="children"
         item-key="id"
         :style="[
-          data[props.children].length == 1
+          data[props.children]?.length == 1
             ? 'display:flex;flex-direction:column'
             : '',
           'min-width:100%;',
@@ -149,7 +149,7 @@ export default defineComponent({
   setup(props, { slots, attrs, emit, expose }) {
     let isLeaf = computed(() =>
       Array.isArray(props.data[props.props.children]) &&
-      props.data[props.props.children].length > 0
+      props.data[props.props.children]?.length > 0
         ? false
         : true
     );

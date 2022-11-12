@@ -1,4 +1,4 @@
-import {Plugin,App} from 'vue';
+import {App} from 'vue';
 
 import {NodeContext,PropsType} from './revsetter-maps';
 
