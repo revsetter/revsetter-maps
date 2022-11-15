@@ -11,9 +11,10 @@
       :props="{
         label: 'label',
         expand: 'expand',
+        leafClass:'is-leaf-drag',
         children: 'children',
         key: 'some_id',
-        onMove: () => true,
+        onMove:canDrag,
         onMoveEnd: () => true,
       }"
       :data="treeData"
@@ -29,6 +30,7 @@
         label: 'label',
         expand: 'expand',
         children: 'children',
+        leafClass:'is-leaf-drag',
         key: 'some_id',
         onMove: () => true,
         onMoveEnd: () => true,
@@ -79,21 +81,21 @@ export default defineComponent({
       expand: true,
       some_id: 1,
       children: [
-        { label: "child 1", some_id: 2 },
-        { label: "child 2", some_id: 3 },
+        { label: "child 2", some_id: 2 },
+        { label: "child 3", some_id: 3 },
         {
-          label: "subparent 1",
+          label: "subparent 4",
           some_id: 4,
           expand: false,
           children: [
-            { label: "subchild 1", some_id: 5 },
+            { label: "subchild 5", some_id: 5 },
             {
-              label: "subchild 2",
+              label: "subchild 6",
               some_id: 6,
               expand: false,
               children: [
-                { label: "subchild 11", some_id: 7 },
-                { label: "subchild 22", some_id: 8 },
+                { label: "subchild 7", some_id: 7 },
+                { label: "subchild 8", some_id: 8 },
               ],
             },
           ],
@@ -151,6 +153,12 @@ export default defineComponent({
       tryAddLeaf,
       deleteNode,
     };
+  },
+  methods: {
+    canDrag(e) {
+      return e?.draggedContext?.element?.some_id!=7
+      
+    }
   },
 });
 </script>

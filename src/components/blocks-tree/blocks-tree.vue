@@ -62,7 +62,7 @@ export default defineComponent({
           label: "label",
           expand: "expand",
           children: "children",
-          leafClass: "is-leaf-drag",
+          leafClass: null,
           chosenClass: "",
           ghostClass: "",
           key: "id",

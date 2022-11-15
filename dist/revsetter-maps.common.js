@@ -10208,7 +10208,7 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-tree.vue?vue&type=template&id=2fb3363f&ts=true
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-tree.vue?vue&type=template&id=3a68e278&ts=true
 
 var _hoisted_1 = {
   class: "organization-tree-container"
@@ -10263,9 +10263,9 @@ function render(_ctx, _cache) {
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-node.vue?vue&type=template&id=b99b5314&ts=true
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-node.vue?vue&type=template&id=a377e0ec&ts=true
 
-var blocks_nodevue_type_template_id_b99b5314_ts_true_hoisted_1 = {
+var blocks_nodevue_type_template_id_a377e0ec_ts_true_hoisted_1 = {
   class: "organization-tree-node-label"
 };
 var _hoisted_2 = {
@@ -10275,14 +10275,14 @@ var _hoisted_3 = {
   key: 1
 };
 var _hoisted_4 = ["id", "data-type", "data-id"];
-function blocks_nodevue_type_template_id_b99b5314_ts_true_render(_ctx, _cache) {
+function blocks_nodevue_type_template_id_a377e0ec_ts_true_render(_ctx, _cache) {
   var _component_blocks_node = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("blocks-node", true);
 
   var _component_draggable = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("draggable");
 
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", {
     class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(_ctx.nodeClass)
-  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", blocks_nodevue_type_template_id_b99b5314_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
+  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", blocks_nodevue_type_template_id_a377e0ec_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
     class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(_ctx.innerLabelClass),
     style: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeStyle"])({
       width: _ctx.labelWidth
@@ -10344,7 +10344,7 @@ function blocks_nodevue_type_template_id_b99b5314_ts_true_render(_ctx, _cache) {
     }),
     group: "children",
     "item-key": "id",
-    class: [_ctx.isLeaf && _ctx.isDragOn ? 'is-leaf-drag' : ''],
+    class: [_ctx.isLeaf && _ctx.isDragOn && _ctx.props.leafClass && _ctx.props.onMove(_ctx.onMoveEvent) ? _ctx.props.leafClass : ''],
     style: ['min-width:100%;']
   }), {
     item: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withCtx"])(function (_ref) {
@@ -10439,7 +10439,7 @@ var vuedraggable_umd_default = /*#__PURE__*/__webpack_require__.n(vuedraggable_u
           children: "children",
           chosenClass: "",
           ghostClass: "",
-          leafClass: 'is-leaf-drag',
+          leafClass: null,
           ignoreClass: ".ignore-elements",
           key: "id",
           typeKey: "type",
@@ -10551,7 +10551,7 @@ var exportHelper_default = /*#__PURE__*/__webpack_require__.n(exportHelper);
 
 
 
-const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_script_lang_ts, [['render',blocks_nodevue_type_template_id_b99b5314_ts_true_render]])
+const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_script_lang_ts, [['render',blocks_nodevue_type_template_id_a377e0ec_ts_true_render]])
 
 /* harmony default export */ var blocks_node = (__exports__);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-tree.vue?vue&type=script&lang=ts
@@ -10580,7 +10580,7 @@ const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_scri
           label: "label",
           expand: "expand",
           children: "children",
-          leafClass: "is-leaf-drag",
+          leafClass: null,
           chosenClass: "",
           ghostClass: "",
           key: "id"

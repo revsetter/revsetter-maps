@@ -56,7 +56,7 @@
         "
         group="children"
         item-key="id"
-        :class="[isLeaf && isDragOn?props.leafClass:'']"
+        :class="[isLeaf && isDragOn&&props.leafClass&&props.onMove(onMoveEvent)?props.leafClass:'']"
         :style="[
           'min-width:100%;',
         ]"
@@ -135,7 +135,7 @@ export default defineComponent({
         children: "children",
         chosenClass: "",
         ghostClass: "",
-        leafClass: 'is-leaf-drag',
+        leafClass: null,
         ignoreClass: ".ignore-elements",
         key: "id",
         typeKey: "type",
