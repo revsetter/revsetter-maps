@@ -56,7 +56,7 @@
         "
         group="children"
         item-key="id"
-        :class="[isLeaf && isDragOn?'is-leaf-drag':'']"
+        :class="[isLeaf && isDragOn?props.leafClass:'']"
         :style="[
           'min-width:100%;',
         ]"
