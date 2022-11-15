@@ -43,17 +43,21 @@
           ghostClass: props.ghostClass,
           chosenClass: props.chosenClass,
         }"
+        @start="
+          (e) => {
+            $emit('is-drag-on', true)
+          }
+        "
         @end="
           (e) => {
             props.onMoveEnd(onMoveEvent);
+            $emit('is-drag-on', false)
           }
         "
         group="children"
         item-key="id"
+        :class="[isLeaf && isDragOn?'is-leaf-drag':'']"
         :style="[
-          data[props.children]?.length == 1
-            ? 'display:flex;flex-direction:column'
-            : '',
           'min-width:100%;',
         ]"
       >
@@ -66,6 +70,10 @@
             :renderContent="renderContent"
             :labelWidth="labelWidth"
             :labelClassName="labelClassName"
+            :is-drag-on="isDragOn"
+            @is-drag-on="
+              (e) => $emit('is-drag-on', e)
+            "
             @node-expand="
               (e, data, context) => $emit('node-expand', e, data, context)
             "
@@ -115,6 +123,10 @@ export default defineComponent({
       type: Object,
       required: true,
     },
+    isDragOn: {
+      type: Boolean,
+      default: false,
+    },
     props: {
       type: Object,
       default: () => ({
@@ -123,6 +135,7 @@ export default defineComponent({
         children: "children",
         chosenClass: "",
         ghostClass: "",
+        leafClass: 'is-leaf-drag',
         ignoreClass: ".ignore-elements",
         key: "id",
         typeKey: "type",

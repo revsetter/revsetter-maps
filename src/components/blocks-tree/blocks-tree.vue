@@ -2,6 +2,8 @@
   <div class="organization-tree-container">
     <div class="organization-tree" :class="{ horizontal, collapsable }">
       <BlocksNode
+        @is-drag-on="($e)=>is_drag_on=$e"
+        :is-drag-on="is_drag_on"
         :data="data"
         :props="props"
         :horizontal="horizontal"
@@ -43,6 +45,11 @@ export default defineComponent({
   components: {
     BlocksNode,
   },
+  data() {
+    return {
+      is_drag_on: false
+    }
+  },
   props: {
     data: {
       type: Object,
@@ -55,6 +62,9 @@ export default defineComponent({
           label: "label",
           expand: "expand",
           children: "children",
+          leafClass: "is-leaf-drag",
+          chosenClass: "",
+          ghostClass: "",
           key: "id",
         },
     },

@@ -10217,7 +10217,7 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-tree.vue?vue&type=template&id=454d6a3a&ts=true
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-tree.vue?vue&type=template&id=2fb3363f&ts=true
 
 var _hoisted_1 = {
   class: "organization-tree-container"
@@ -10231,6 +10231,10 @@ function render(_ctx, _cache) {
       collapsable: _ctx.collapsable
     }])
   }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_BlocksNode, {
+    onIsDragOn: _cache[0] || (_cache[0] = function ($e) {
+      return _ctx.is_drag_on = $e;
+    }),
+    "is-drag-on": _ctx.is_drag_on,
     data: _ctx.data,
     props: _ctx.props,
     horizontal: _ctx.horizontal,
@@ -10238,19 +10242,19 @@ function render(_ctx, _cache) {
     collapsable: _ctx.collapsable,
     "render-content": _ctx.renderContent,
     "label-class-name": _ctx.labelClassName,
-    onNodeExpand: _cache[0] || (_cache[0] = function (e, data, nodeContext) {
+    onNodeExpand: _cache[1] || (_cache[1] = function (e, data, nodeContext) {
       return _ctx.$emit('node-expand', e, data, nodeContext);
     }),
-    onNodeFocus: _cache[1] || (_cache[1] = function (e, data, nodeContext) {
+    onNodeFocus: _cache[2] || (_cache[2] = function (e, data, nodeContext) {
       return _ctx.$emit('node-focus', e, data, nodeContext);
     }),
-    onNodeClick: _cache[2] || (_cache[2] = function (e, data, nodeContext) {
+    onNodeClick: _cache[3] || (_cache[3] = function (e, data, nodeContext) {
       return _ctx.$emit('node-click', e, data, nodeContext);
     }),
-    onNodeMouseover: _cache[3] || (_cache[3] = function (e, data, nodeContext) {
+    onNodeMouseover: _cache[4] || (_cache[4] = function (e, data, nodeContext) {
       return _ctx.$emit('node-mouseover', e, data, nodeContext);
     }),
-    onNodeMouseout: _cache[4] || (_cache[4] = function (e, data, nodeContext) {
+    onNodeMouseout: _cache[5] || (_cache[5] = function (e, data, nodeContext) {
       return _ctx.$emit('node-mouseout', e, data, nodeContext);
     })
   }, {
@@ -10263,14 +10267,14 @@ function render(_ctx, _cache) {
       })];
     }),
     _: 3
-  }, 8, ["data", "props", "horizontal", "label-width", "collapsable", "render-content", "label-class-name"])], 2)]);
+  }, 8, ["is-drag-on", "data", "props", "horizontal", "label-width", "collapsable", "render-content", "label-class-name"])], 2)]);
 }
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-node.vue?vue&type=template&id=089137f9&ts=true
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--7!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-node.vue?vue&type=template&id=b99b5314&ts=true
 
-var blocks_nodevue_type_template_id_089137f9_ts_true_hoisted_1 = {
+var blocks_nodevue_type_template_id_b99b5314_ts_true_hoisted_1 = {
   class: "organization-tree-node-label"
 };
 var _hoisted_2 = {
@@ -10280,16 +10284,14 @@ var _hoisted_3 = {
   key: 1
 };
 var _hoisted_4 = ["id", "data-type", "data-id"];
-function blocks_nodevue_type_template_id_089137f9_ts_true_render(_ctx, _cache) {
-  var _ctx$data$_ctx$props$;
-
+function blocks_nodevue_type_template_id_b99b5314_ts_true_render(_ctx, _cache) {
   var _component_blocks_node = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("blocks-node", true);
 
   var _component_draggable = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["resolveComponent"])("draggable");
 
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", {
     class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(_ctx.nodeClass)
-  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", blocks_nodevue_type_template_id_089137f9_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
+  }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", blocks_nodevue_type_template_id_b99b5314_ts_true_hoisted_1, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementVNode"])("div", {
     class: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeClass"])(_ctx.innerLabelClass),
     style: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["normalizeStyle"])({
       width: _ctx.labelWidth
@@ -10326,7 +10328,7 @@ function blocks_nodevue_type_template_id_089137f9_ts_true_render(_ctx, _cache) {
     "data-id": _ctx.data[_ctx.props.key]
   }, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])(_component_draggable, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["mergeProps"])({
     modelValue: _ctx.data[_ctx.props.children],
-    "onUpdate:modelValue": _cache[10] || (_cache[10] = function ($event) {
+    "onUpdate:modelValue": _cache[11] || (_cache[11] = function ($event) {
       return _ctx.data[_ctx.props.children] = $event;
     }),
     move: function move(e) {
@@ -10341,12 +10343,18 @@ function blocks_nodevue_type_template_id_089137f9_ts_true_render(_ctx, _cache) {
     ghostClass: _ctx.props.ghostClass,
     chosenClass: _ctx.props.chosenClass
   }, {
-    onEnd: _cache[11] || (_cache[11] = function (e) {
+    onStart: _cache[12] || (_cache[12] = function (e) {
+      _ctx.$emit('is-drag-on', true);
+    }),
+    onEnd: _cache[13] || (_cache[13] = function (e) {
       _ctx.props.onMoveEnd(_ctx.onMoveEvent);
+
+      _ctx.$emit('is-drag-on', false);
     }),
     group: "children",
     "item-key": "id",
-    style: [((_ctx$data$_ctx$props$ = _ctx.data[_ctx.props.children]) === null || _ctx$data$_ctx$props$ === void 0 ? void 0 : _ctx$data$_ctx$props$.length) == 1 ? '' : '', 'min-width:100%;']
+    class: [_ctx.isLeaf && _ctx.isDragOn ? 'is-leaf-drag' : ''],
+    style: ['min-width:100%;']
   }), {
     item: Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withCtx"])(function (_ref) {
       var element = _ref.element,
@@ -10359,19 +10367,23 @@ function blocks_nodevue_type_template_id_089137f9_ts_true_render(_ctx, _cache) {
         renderContent: _ctx.renderContent,
         labelWidth: _ctx.labelWidth,
         labelClassName: _ctx.labelClassName,
-        onNodeExpand: _cache[5] || (_cache[5] = function (e, data, context) {
+        "is-drag-on": _ctx.isDragOn,
+        onIsDragOn: _cache[5] || (_cache[5] = function (e) {
+          return _ctx.$emit('is-drag-on', e);
+        }),
+        onNodeExpand: _cache[6] || (_cache[6] = function (e, data, context) {
           return _ctx.$emit('node-expand', e, data, context);
         }),
-        onNodeFocus: _cache[6] || (_cache[6] = function (e, data, context) {
+        onNodeFocus: _cache[7] || (_cache[7] = function (e, data, context) {
           return _ctx.$emit('node-focus', e, data, context);
         }),
-        onNodeClick: _cache[7] || (_cache[7] = function (e, data, context) {
+        onNodeClick: _cache[8] || (_cache[8] = function (e, data, context) {
           return _ctx.$emit('node-click', e, data, context);
         }),
-        onNodeMouseover: _cache[8] || (_cache[8] = function (e, data, context) {
+        onNodeMouseover: _cache[9] || (_cache[9] = function (e, data, context) {
           return _ctx.$emit('node-mouseover', e, data, context);
         }),
-        onNodeMouseout: _cache[9] || (_cache[9] = function (e, data, context) {
+        onNodeMouseout: _cache[10] || (_cache[10] = function (e, data, context) {
           return _ctx.$emit('node-mouseout', e, data, context);
         })
       }, {
@@ -10384,10 +10396,10 @@ function blocks_nodevue_type_template_id_089137f9_ts_true_render(_ctx, _cache) {
           })];
         }),
         _: 2
-      }, 1032, ["data", "props", "collapsable", "renderContent", "labelWidth", "labelClassName"]))];
+      }, 1032, ["data", "props", "collapsable", "renderContent", "labelWidth", "labelClassName", "is-drag-on"]))];
     }),
     _: 3
-  }, 16, ["modelValue", "move", "onChange", "filter", "style"])], 8, _hoisted_4)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)], 2);
+  }, 16, ["modelValue", "move", "onChange", "filter", "class"])], 8, _hoisted_4)) : Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createCommentVNode"])("", true)], 2);
 }
 // CONCATENATED MODULE: ./node_modules/@babel/runtime/helpers/esm/defineProperty.js
 function _defineProperty(obj, key, value) {
@@ -10423,6 +10435,10 @@ var vuedraggable_umd_default = /*#__PURE__*/__webpack_require__.n(vuedraggable_u
       type: Object,
       required: true
     },
+    isDragOn: {
+      type: Boolean,
+      default: false
+    },
     props: {
       type: Object,
       default: function _default() {
@@ -10432,6 +10448,7 @@ var vuedraggable_umd_default = /*#__PURE__*/__webpack_require__.n(vuedraggable_u
           children: "children",
           chosenClass: "",
           ghostClass: "",
+          leafClass: 'is-leaf-drag',
           ignoreClass: ".ignore-elements",
           key: "id",
           typeKey: "type",
@@ -10543,7 +10560,7 @@ var exportHelper_default = /*#__PURE__*/__webpack_require__.n(exportHelper);
 
 
 
-const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_script_lang_ts, [['render',blocks_nodevue_type_template_id_089137f9_ts_true_render]])
+const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_script_lang_ts, [['render',blocks_nodevue_type_template_id_b99b5314_ts_true_render]])
 
 /* harmony default export */ var blocks_node = (__exports__);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-plugin-typescript/node_modules/ts-loader??ref--13-3!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./src/components/blocks-tree/blocks-tree.vue?vue&type=script&lang=ts
@@ -10554,6 +10571,11 @@ const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_scri
   name: "blocks-tree",
   components: {
     BlocksNode: blocks_node
+  },
+  data: function data() {
+    return {
+      is_drag_on: false
+    };
   },
   props: {
     data: {
@@ -10567,6 +10589,9 @@ const __exports__ = /*#__PURE__*/exportHelper_default()(blocks_nodevue_type_scri
           label: "label",
           expand: "expand",
           children: "children",
+          leafClass: "is-leaf-drag",
+          chosenClass: "",
+          ghostClass: "",
           key: "id"
         };
       }
